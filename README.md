@@ -1,7 +1,7 @@
 # chrome-desktop-outlook-notifier
-A chrome/brave extension for Outlook 365 Desktop notifications for meetings
+A Chrome/Brave/Edge extension for Outlook 365 Desktop notifications for meetings
 
-For install this chrome extension:
+To install this chrome extension:
 
 1. Download the repo content as zip, using this link https://github.com/tbeadle/chrome-desktop-outlook-notifier/archive/master.zip
 2. Unzip creating a folder
