@@ -30,7 +30,7 @@
 
         function notifyReminder(mutations) {
             mutations.forEach(function(mutation) {
-                const items = document.evaluate(".//div[@data-is-focusable='true']/button/*[@data-automationid='splitbuttonprimary']", mutation.target);
+                const items = document.evaluate(".//div[@data-is-focusable='true']/button", mutation.target);
                 let item = items.iterateNext();
                 while (item) {
                     const info = item.querySelector(":scope > :nth-child(2)");
