@@ -6,17 +6,17 @@
         const appElement = document.querySelector("#app");
         const OutlookMutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
         const bodyObserver = new OutlookMutationObserver(check);
-        bodyObserver.observe(win.document.body, {
+        bodyObserver.observe(appElement, {
             childList: true,
             subtree: true
         });
 
         function check() {
             // Find the "Reminders" portal element.
-            const portalElements = document.querySelectorAll('[data-portal-element="true"]');
+            const portalElements = document.querySelectorAll('[dir="ltr"]');
             for (const elem of portalElements) {
                 const compStyle = win.getComputedStyle(elem);
-                if (compStyle.getPropertyValue("z-index") == 10000000) {
+                if (compStyle.getPropertyValue("z-index") == 1000000) {
                     const portalElementObs = new OutlookMutationObserver(notifyReminder);
                     portalElementObs.observe(elem, {
                         childList: true,
