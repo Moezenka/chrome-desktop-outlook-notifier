@@ -1,7 +1,7 @@
 {
   "name": "Outlook Notifier",
   "description": "What Microsoft should have done.",
-  "version": "1.4",
+  "version": "1.6",
   "author": "Jorge Ortega & Tommy Beadle",
   "permissions": [
     "notifications",
