@@ -9,11 +9,12 @@
   ],
   "host_permissions": [
     "https://outlook.office365.com/*",
-    "https://outlook.office.com/*"
+    "https://outlook.office.com/*",
+    "https://outlook.office.com.mcas.ms/*"
   ],
   "content_scripts": [
     {
-      "matches": ["https://*.office365.com/*", "https://*.office.com/*"],
+      "matches": ["https://*.office365.com/*", "https://*.office.com/*", "https://*.office.com.mcas.ms/*"],
       "js": ["content_script.js"],
       "run_at": "document_end"
     }
